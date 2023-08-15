@@ -1,0 +1,12 @@
+function Palindrome (CH : string) : boolean
+ IF length (CH) <= 1 THEN 
+ Palindrome := true ;
+ 
+
+else IF UpCase (CH[1]) <> UpCase (CH[length(CH)]) THEN
+Palindrome := false ;
+ 
+else Palindrome := FN Palindrome( Copy(CH, 2 , length(CH)-2))
+ 
+
+
